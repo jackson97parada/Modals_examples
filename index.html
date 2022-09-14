@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Modals</title>
+  </head>
+  <body>
+    <!-- First Modal -->
+    <section
+      class="modal modal-sheet position-static d-block bg-secondary py-5"
+      tabindex="-1"
+      role="dialog"
+      id="modalSheet"
+    >
+      <div class="modal-dialog" style="max-width: 380px">
+        <div class="modal-content rounded-4 shadow">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">Modal title</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body py-0">
+            <p>
+              This is a modal sheet, a variation of the modal that docs itself
+              to the bottom of the viewport like the newer share sheets in iOS.
+            </p>
+          </div>
+          <div class="modal-footer border-0 gap-1 px-2 pb-4 mb-2">
+            <button type="button" class="btn btn-primary btn-lg w-100">
+              Save changes
+            </button>
+            <button
+              type="button"
+              class="btn btn-secondary text-dark border-0 bg-light btn-lg w-100"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Divider -->
+    <div class="divider"></div>
+    <!-- Second Modal -->
+    <section
+      class="modal modal-sheet position-static d-block bg-secondary py-5"
+    >
+      <div class="modal-dialog" style="max-width: 380px">
+        <div class="modal-content rounded-edit shadow">
+          <div class="modal-header">
+            <div class="modal-title text-center p-2">
+              <h5 class="m-0">Enable this setting?</h5>
+              <p class="m-0">
+                You can always change your mind in your account settings.
+              </p>
+            </div>
+          </div>
+          <div class="modal-footer flex-nowra p-0 border-0">
+            <button
+              type="button"
+              class="btn btn-lg btn-link fs-6 fw-bold text-decoration-none m-0 rounded-0 border-end col-6"
+            >
+              Yes, enable
+            </button>
+            <button
+              type="button"
+              class="btn btn-lg btn-link fs-6 text-decoration-none m-0 rounded-0 col-6"
+            >
+              No thanks
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Divider -->
+    <div class="divider"></div>
+    <!-- Third Modal -->
+    <section class="bg-secondary py-5">
+      <div class="modal-dialog" style="max-width: 378px">
+        <div class="modal-content shadow rounded-4 p-5">
+          <div class="modal-header p-0 mb-5 border-0">
+            <div class="modal-title">
+              <h2 class="fw-bold m-0">What's new</h2>
+            </div>
+          </div>
+          <div class="modal-body p-0 pb-5 mb-5 d-flex flex-column gap-4">
+            <div class="d-flex gap-4">
+              <div class="text-center">
+                <i
+                  class="fa-solid fa-border-all fs-1 text-secondary"
+                  style="width: 47.1px"
+                ></i>
+              </div>
+              <div>
+                <h5 class="m-0">Grid view</h5>
+                <span>Not into lists? Try the new grid view.</span>
+              </div>
+            </div>
+            <div class="d-flex gap-4">
+              <div class="text-center">
+                <i
+                  class="fa-regular fa-bookmark fs-1 text-warning"
+                  style="width: 47.1px"
+                ></i>
+              </div>
+              <div>
+                <h5 class="m-0">Bookmarks</h5>
+                <span>Save items you love for easy access later.</span>
+              </div>
+            </div>
+            <div class="d-flex gap-4">
+              <div class="text-center" style="width: 48px">
+                <i class="fa-solid fa-film fs-1 text-primary"></i>
+              </div>
+              <div>
+                <h5 class="m-0">Video embeds</h5>
+                <span>Share videos wherever you go.</span>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer p-0 border-0">
+            <button type="button" class="btn btn-lg btn-primary w-100 m-0">
+              Great, thanks!
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Divider -->
+    <div class="divider"></div>
+    <!-- Fourth Modal -->
+    <section class="bg-secondary py-5">
+      <div class="modal-dialog">
+        <div class="modal-content p-5 shadow rounded-editwo">
+          <div class="modal-header border-0 p-0 pb-3">
+            <h2 class="modal-title fw-bold pb-1 m-0">Sign up for free</h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-0 mb-4">
+            <div class="form-floating mb-3">
+              <input
+                type="email"
+                class="form-control rounded-edit"
+                id="floatingInput"
+                placeholder="Email address"
+              />
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="password"
+                class="form-control rounded-edit"
+                id="floatingInputPassword"
+                placeholder="Password"
+              />
+              <label for="floatingInputPassword">Password</label>
+            </div>
+            <button
+              type="button"
+              class="btn btn-lg btn-primary w-100 rounded-edit mb-2"
+            >
+              Sign up
+            </button>
+            <span class="small text-muted"
+              >By clicking Sign up, you agree to the terms of use.</span
+            >
+          </div>
+          <div class="modal-footer justify-content-start p-0 pt-4">
+            <h5 class="fw-bold m-0 col-12 mb-3">Or use a third-party</h5>
+            <button
+              type="button"
+              class="btn btn-outline-dark col-12 py-2 m-0 mb-2 rounded-edit"
+            >
+              <i class="fa-brands fa-twitter pe-2"></i>Sign up with Twitter
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-primary col-12 py-2 m-0 mb-2 rounded-edit"
+            >
+              <i class="fa-brands fa-facebook pe-2"></i>Sign up with Facebook
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-secondary col-12 py-2 m-0 mb-2 rounded-edit"
+            >
+              <i class="fa-brands fa-github pe-2"></i>Sign up with GitHub
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Divider -->
+    <div class="divider"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
